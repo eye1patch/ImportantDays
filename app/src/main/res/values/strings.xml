@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">重要的日子</string>
+    <string name="chinese_name">重要的日子</string>
+
+    <string name="spring_festival_title">春节，最重要的节日</string>
+    <string name="spring_festival_subtitle">阖家欢乐，辞旧迎新</string>
+    <string name="spring_festival_hint1">这些习俗会不会勾起你的回忆呢？</string>
+    <string name="spring_festival_hint2">探寻春节的来历</string>
+    <string name="spring_festival_hint3">过年的整体流程</string>
+
+    <string name="browse_by_month_title">你最喜欢哪个月份？</string>
+    <string name="browse_by_month_subtitle">每个月都会有些特殊的日子</string>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/browseByMonthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spring_festival_title"
+        android:textColor="#403E3E"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/springFestivalSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12sp"
+        android:text="@string/spring_festival_subtitle"
+        android:textColor="#656363"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/browseByMonthTitle" />
+
+    <com.example.importantdays.utils.RoundImageView
+        android:id="@+id/springFestivalPic1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="14sp"
+        android:layout_marginEnd="28dp"
+        android:onClick="getDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/springFestivalSubtitle"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/spring_festival_hint1"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/springFestivalPic1"
+        app:layout_constraintStart_toStartOf="@+id/springFestivalPic1" />
+
+    <com.example.importantdays.utils.RoundImageView
+        android:id="@+id/springFestivalPic2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="getDetail"
+        app:layout_constraintEnd_toStartOf="@+id/springFestivalPic3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/springFestivalPic1"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <com.example.importantdays.utils.RoundImageView
+        android:id="@+id/springFestivalPic3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="getDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/springFestivalPic2"
+        app:layout_constraintTop_toBottomOf="@+id/springFestivalPic1"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/spring_festival_hint2"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/springFestivalPic2"
+        app:layout_constraintEnd_toEndOf="@+id/springFestivalPic2"
+        app:layout_constraintStart_toStartOf="@+id/springFestivalPic2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/spring_festival_hint3"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/springFestivalPic3"
+        app:layout_constraintStart_toStartOf="@+id/springFestivalPic3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
